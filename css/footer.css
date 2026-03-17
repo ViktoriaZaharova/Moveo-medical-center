@@ -1,1 +1,42 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@font-face {
+  font-family: "Raleway";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/Raleway/Raleway-Regular.eot");
+  src: url("../fonts/Raleway/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway/Raleway-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Unbounded";
+  font-weight: 300;
+  font-style: normal;
+  src: url("../fonts/Unbounded/Unbounded-Light.eot");
+  src: url("../fonts/Unbounded/Unbounded-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Unbounded/Unbounded-Light.woff") format("woff"), url("../fonts/Unbounded/Unbounded-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Unbounded";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/Unbounded/Unbounded-Regular.eot");
+  src: url("../fonts/Unbounded/Unbounded-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Unbounded/Unbounded-Regular.woff") format("woff"), url("../fonts/Unbounded/Unbounded-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Unbounded";
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/Unbounded/Unbounded-Medium.eot");
+  src: url("../fonts/Unbounded/Unbounded-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Unbounded/Unbounded-Medium.woff") format("woff"), url("../fonts/Unbounded/Unbounded-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Unbounded";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/Unbounded/Unbounded-Bold.eot");
+  src: url("../fonts/Unbounded/Unbounded-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Unbounded/Unbounded-Bold.woff") format("woff"), url("../fonts/Unbounded/Unbounded-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Unbounded";
+  font-weight: 600;
+  font-style: normal;
+  src: url("../fonts/Unbounded/Unbounded-SemiBold.eot");
+  src: url("../fonts/Unbounded/Unbounded-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Unbounded/Unbounded-SemiBold.woff") format("woff"), url("../fonts/Unbounded/Unbounded-SemiBold.ttf") format("truetype");
+}
