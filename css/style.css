@@ -347,6 +347,10 @@ h3, .h3 {
   padding: 100px;
 }
 
+.p-120 {
+  padding: 120px 0;
+}
+
 .pt-120 {
   padding-top: 120px;
 }
