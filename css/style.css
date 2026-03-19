@@ -398,6 +398,10 @@ a.color-black:hover, a.color-black:focus {
   color: #0066FF;
 }
 
+.font-default {
+  font-family: "Unbounded", sans-serif;
+}
+
 .slick-slider {
   width: 100%;
 }
