@@ -1,0 +1,81 @@
+.home {
+  margin: 0 0 20px;
+}
+
+.btn-price {
+  margin: 0 0 20px auto;
+}
+
+.home-banner {
+  position: relative;
+}
+
+.btn-sign {
+  position: absolute;
+  z-index: 2;
+  width: 234px;
+  height: 234px;
+  right: 0;
+  bottom: -99px;
+}
+
+.about-product__img {
+  height: 100%;
+}
+.about-product__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.about-product__content {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.about-product__content h2 {
+  margin: auto 0 40px 0;
+}
+
+.advantages-item {
+  width: 100%;
+  height: 100%;
+  min-height: 104px;
+  text-align: center;
+  background: #fff;
+  border-radius: 60px;
+  border: 1px solid #0066FF;
+  padding: 20px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: -0.2px;
+  color: #0066FF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.advantages-item-blue {
+  background: #0066FF;
+  color: #fff;
+}
+
+.who-for {
+  padding: 120px 0 100px;
+}
+.who-for h2 {
+  margin: 0 auto 40px;
+  max-width: 620px;
+}

@@ -42,7 +42,6 @@ header {
 }
 .menu li a:hover, .menu li a:focus {
   color: #0066FF;
-  text-decoration: underline;
 }
 
 .header-wrapper {

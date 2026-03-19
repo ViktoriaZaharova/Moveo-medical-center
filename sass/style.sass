@@ -126,12 +126,23 @@ button, .btn
   align-items: center
   justify-content: center
   text-align: center
-  padding: 10px 45px
-  font-size: 16px
-  font-weight: bold
-  height: 46px
-  border-radius: 10px
+  padding: 10px 40px
+  font-size: 14px
+  font-weight: 400
+  height: 65px
+  border-radius: 40px
   transition: 0.3s ease
+  text-transform: uppercase
+
+.btn-accent
+  background: $green
+  color: $black
+
+  &:hover, &:focus
+    background: $green_hover
+    color: $black
+
+    
 
 .svg-icon
   display: inline-block
@@ -161,16 +172,98 @@ ul, ol
   >*
     padding: 0 10px
 
+h1, .h1
+  width: 100%
+  margin: 0 0 20px
+  font-size: 60px
+  line-height: 120%
+  font-weight: 600
+
+h2, .h2
+  width: 100%
+  margin: 0 0 40px
+  font-size: 34px
+  line-height: 120%
+  font-weight: 500
+
+h3, .h3
+  width: 100%
+  margin: 0 0 20px
+  font-size: 24px
+  line-height: 120%
+  font-weight: 500
+
+.subtitle-text
+  font-size: 18px
+  font-weight: 300
+  line-height: 100%
+  width: 100%
+  letter-spacing: -0.2px
+  margin: 0 auto 20px
+
 .text-big
   font-size: 18px
   font-weight: 500
   line-height: 120%
 
+.box-text
+  font-size: 18px
+  line-height: 120%
+  font-weight: 400
+  font-family: $text-font
+  p
+    margin: 0 0 20px
+    &:last-child
+      margin: 0
+
+.title-wrapper
+  width: 100%
+  display: flex
+  align-items: flex-end
+  justify-content: space-between
+  margin: 0 0 80px
+
+.mb-80
+  margin-bottom: 80px
+
+.mb-60
+  margin-bottom: 60px
+
+.mb-20  
+  margin-bottom: 20px  
+
+.p-100
+  padding: 100px 
+
+.pt-120
+  padding-top: 120px  
+
+.image-box
+  width: 100%
+  @include d-flex
+  img
+    width: 100%
+
+.br-120
+  border-radius: 120px  
+
+.br-100
+  border-radius: 100%   
+    
+
+
+.bg-white
+  background: #fff
+
+
 a.color-black
   color: $black
   &:hover, &:focus
-    color: $blue      
+    color: $blue
 
+
+
+// slick slider
 .slick-slider
   width: 100%
 
