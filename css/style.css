@@ -86,7 +86,7 @@ body {
   line-height: normal;
   font-family: "Unbounded", sans-serif;
   font-weight: normal;
-  background: #F4F9FF;
+  background: #fff;
   color: #0B1220;
 }
 
@@ -375,8 +375,16 @@ h3, .h3 {
   border-radius: 100%;
 }
 
+.br-60 {
+  border-radius: 60px;
+}
+
 .bg-white {
   background: #fff;
+}
+
+.bg-light-blue {
+  background: #F4F9FF;
 }
 
 a.color-black {
