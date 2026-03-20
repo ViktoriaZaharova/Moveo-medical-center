@@ -72,4 +72,18 @@
 
     </symbol>
 
+
+    <symbol id="arrow-left" viewBox="0 0 10 16">
+        <path d="M8.46094 0.708984L1.41886 7.70898L8.46094 14.709" stroke-width="2" />
+    </symbol>
+
+    <symbol id="arrow-right" viewBox="0 0 10 16">
+        <path d="M0.705078 14.709L7.74715 7.70899L0.705078 0.708984" stroke-width="2" />
+    </symbol>
+
+    <symbol id="plus-icon" viewBox="0 0 26 26">
+        <path d="M12.9967 3V23M23 12.9967L3 12.9967" stroke-width="2" />
+    </symbol>
+
+
 </svg>

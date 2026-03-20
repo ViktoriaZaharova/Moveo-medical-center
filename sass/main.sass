@@ -70,8 +70,19 @@
         font-family: $default-font
 
 .efficiency
-    border-radius: 0 0 120px 120px
+    
     padding: 0 0 120px
+    background: #fff
+    position: relative
+    z-index: 1
+    &::before
+        content: ''
+        position: absolute
+        z-index: -1
+        width: 100%
+        height: 100%
+        border-radius: 0 0 120px 120px
+        background: #F4F9FF
     h2
         padding: 30px 0 30px 90px
         margin: 0
@@ -111,6 +122,9 @@
         font-family: $default-font
         max-width: 367px
 
+.stages
+    border-radius: 0 0 120px 120px        
+
 .stage-card
     width: 100%
     display: flex
@@ -144,13 +158,12 @@
         margin: 0 0 32px
     &__number
         margin: auto 0 20px
-        background: #fff    
+        background: #fff
         padding: 10px 20px
         font-size: 18px
         line-height: 120%
         font-weight: 500
-        border-radius: 100px 
-
+        border-radius: 100px
 
 .preparation-wrapper
     width: 100%
@@ -164,8 +177,7 @@
     display: flex
     flex-direction: column
     h2
-        margin-top: auto    
-
+        margin-top: auto
 
 .preparation-list
     width: 60%
@@ -180,7 +192,7 @@
     padding: 17px 60px
     border-radius: 120px
     &:last-child
-        margin: 0    
+        margin: 0
     &__icon
         width: 100px
         height: 100px
@@ -228,6 +240,124 @@
         width: 120px
         height: 120px
         margin: 0 0 75px
-        @include d-flex  
+        @include d-flex
     .box-text
-        margin: auto 0 0      
+        margin: auto 0 0
+
+.gallery
+    padding: 100px 0 120px
+
+.gallery-slider
+    padding: 0 100px
+    .slide
+        display: flex
+        align-items: stretch
+        justify-content: center
+
+.gallery-slider-item
+    position: relative
+    z-index: 1
+    width: 572px
+    height: 700px
+    margin: 0 20px
+    @include d-flex
+    &__text
+        position: absolute
+        bottom: 40px
+        left: 40px
+        z-index: 2
+        background: #DCEBFF
+        border-radius: 120px
+        padding: 30px 40px
+        font-size: 18px
+        font-weight: 500
+        line-height: 120%
+        color: #334155
+    &__img
+        width: 100%
+        height: 100%
+
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+            border-radius: 120px
+
+.nav-tabs
+    width: 100%
+    background: #fff
+    border-radius: 40px
+    .nav-item
+        width: 100%
+    .nav-link
+        border: none
+        border-radius: 120px
+        padding: 20px 40px
+        font-size: 18px
+        font-weight: 300
+        line-height: 122%
+        letter-spacing: -0.2px
+        width: 100%
+        text-align: left
+        color: #0B1220
+        margin: 0
+        &.active
+            background: $green
+            color: #0B1220
+        &:hover
+            background: $green_hover
+            color: #0B1220
+
+.tab-content
+    width: 100%
+    background: #fff
+    border-radius: 40px
+    padding: 40px
+
+.list-prices
+    width: 100%
+    color: #334155
+    font-size: 18px
+    line-height: 120%
+    font-weight: normal
+    li
+        padding: 0 0 20px
+        margin: 0 0 20px
+        border-bottom: 1px solid #D6E3F5
+        width: 100%
+        display: flex
+        align-items: flex-start
+        justify-content: space-between
+        &:last-child
+            padding: 0
+            margin: 0
+            border: none
+
+
+.callback-wrapper
+    padding: 30px
+    display: flex
+    align-items: flex-start
+    flex-wrap: wrap
+    &__content
+        max-width: 721px
+        width: 100%
+        margin: 0 auto 0 90px
+        padding: 80px 0 0
+    .box-text
+        font-family: $default-font
+        font-weight: 300
+    &__form
+        background: $blue
+        max-width: 732px
+        width: 100%
+        color: #fff
+        padding: 80px
+
+.form-callback
+    [type='submit']
+        margin: 40px 0 0
+
+.consent
+
+

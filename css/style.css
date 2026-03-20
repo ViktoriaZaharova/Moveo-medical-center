@@ -86,7 +86,7 @@ body {
   line-height: normal;
   font-family: "Unbounded", sans-serif;
   font-weight: normal;
-  background: #fff;
+  background: #F4F9FF;
   color: #0B1220;
 }
 
@@ -121,38 +121,80 @@ input, textarea, select {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  padding: 0 15px;
+  padding: 0 40px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: "Unbounded", sans-serif;
+  font-family: "Raleway", sans-serif;
   border: none;
-  border-radius: 10px;
+  border-radius: 100px;
   width: 100%;
-  height: 54px;
-  background: transparent;
-  color: #000;
-  font-size: 15px;
+  height: 62px;
+  background: #F4F9FF;
+  color: #64748B;
+  font-size: 18px;
+  font-weight: 300;
   cursor: pointer;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder, select::-webkit-input-placeholder {
-  color: #595959;
+  color: #0B1220;
 }
 input::-moz-placeholder, textarea::-moz-placeholder, select::-moz-placeholder {
-  color: #595959;
+  color: #0B1220;
 }
 input:-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-placeholder {
-  color: #595959;
+  color: #0B1220;
 }
 input::-ms-input-placeholder, textarea::-ms-input-placeholder, select::-ms-input-placeholder {
-  color: #595959;
+  color: #0B1220;
 }
 input::placeholder, textarea::placeholder, select::placeholder {
-  color: #595959;
+  color: #0B1220;
 }
-input:hover, input:focus, textarea:hover, textarea:focus, select:hover, select:focus {
+input:hover, textarea:hover, select:hover {
   outline: none;
   -webkit-box-shadow: none;
           box-shadow: none;
+  background: #fff;
+  color: #000;
+}
+input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder, select:hover::-webkit-input-placeholder {
+  color: #0B1220;
+}
+input:hover::-moz-placeholder, textarea:hover::-moz-placeholder, select:hover::-moz-placeholder {
+  color: #0B1220;
+}
+input:hover:-ms-input-placeholder, textarea:hover:-ms-input-placeholder, select:hover:-ms-input-placeholder {
+  color: #0B1220;
+}
+input:hover::-ms-input-placeholder, textarea:hover::-ms-input-placeholder, select:hover::-ms-input-placeholder {
+  color: #0B1220;
+}
+input:hover::placeholder, textarea:hover::placeholder, select:hover::placeholder {
+  color: #0B1220;
+}
+input:focus, input.active, input:active, textarea:focus, textarea.active, textarea:active, select:focus, select.active, select:active {
+  color: #0B1220;
+  background: #fff;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+input:focus::-webkit-input-placeholder, input.active::-webkit-input-placeholder, input:active::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder, textarea.active::-webkit-input-placeholder, textarea:active::-webkit-input-placeholder, select:focus::-webkit-input-placeholder, select.active::-webkit-input-placeholder, select:active::-webkit-input-placeholder {
+  color: #0B1220;
+}
+input:focus::-moz-placeholder, input.active::-moz-placeholder, input:active::-moz-placeholder, textarea:focus::-moz-placeholder, textarea.active::-moz-placeholder, textarea:active::-moz-placeholder, select:focus::-moz-placeholder, select.active::-moz-placeholder, select:active::-moz-placeholder {
+  color: #0B1220;
+}
+input:focus:-ms-input-placeholder, input.active:-ms-input-placeholder, input:active:-ms-input-placeholder, textarea:focus:-ms-input-placeholder, textarea.active:-ms-input-placeholder, textarea:active:-ms-input-placeholder, select:focus:-ms-input-placeholder, select.active:-ms-input-placeholder, select:active:-ms-input-placeholder {
+  color: #0B1220;
+}
+input:focus::-ms-input-placeholder, input.active::-ms-input-placeholder, input:active::-ms-input-placeholder, textarea:focus::-ms-input-placeholder, textarea.active::-ms-input-placeholder, textarea:active::-ms-input-placeholder, select:focus::-ms-input-placeholder, select.active::-ms-input-placeholder, select:active::-ms-input-placeholder {
+  color: #0B1220;
+}
+input:focus::placeholder, input.active::placeholder, input:active::placeholder, textarea:focus::placeholder, textarea.active::placeholder, textarea:active::placeholder, select:focus::placeholder, select.active::placeholder, select:active::placeholder {
+  color: #0B1220;
 }
 
 input[type=radio], input[type=checkbox] {
@@ -168,7 +210,7 @@ input[type=radio], input[type=checkbox] {
 label {
   display: block;
   width: 100%;
-  margin: 0 0 13px;
+  margin: 0 0 20px;
 }
 label:last-child {
   margin: 0;
@@ -331,6 +373,14 @@ h3, .h3 {
   margin: 0 0 80px;
 }
 
+.mt-120 {
+  margin-top: 120px;
+}
+
+.mb-120 {
+  margin-bottom: 120px;
+}
+
 .mb-80 {
   margin-bottom: 80px;
 }
@@ -353,6 +403,10 @@ h3, .h3 {
 
 .pt-120 {
   padding-top: 120px;
+}
+
+.pb-120 {
+  padding-bottom: 120px;
 }
 
 .image-box {
@@ -387,10 +441,6 @@ h3, .h3 {
   background: #fff;
 }
 
-.bg-light-blue {
-  background: #F4F9FF;
-}
-
 a.color-black {
   color: #0B1220;
 }
@@ -408,6 +458,47 @@ a.color-black:hover, a.color-black:focus {
 
 .slick-slide {
   outline: none;
+}
+
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  z-index: 2;
+  opacity: 1;
+  border-radius: 50%;
+  border: none;
+  background: #BFEF6B;
+  width: 60px;
+  height: 60px;
+  padding: 17px;
+  stroke: #64748B;
+  fill: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.slick-arrow svg {
+  width: 10px;
+  height: 16px;
+}
+.slick-arrow:hover, .slick-arrow:focus {
+  background: #A9E94B;
+}
+
+.slick-prev {
+  left: 0;
+}
+
+.slick-next {
+  right: 0;
 }
 
 .label-checkbox {
