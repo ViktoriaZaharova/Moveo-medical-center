@@ -521,3 +521,121 @@
 .form-callback [type=submit] {
   margin: 40px 0 0;
 }
+
+.accordion {
+  width: 100%;
+  border: none;
+  border-radius: 0;
+}
+
+.accordion-item {
+  width: 100%;
+  min-height: 120px;
+  border: none;
+  border-radius: 60px;
+  background: #fff;
+  margin: 0 0 20px;
+  color: #0B1220;
+  padding: 0 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  z-index: 1;
+}
+.accordion-item:last-child {
+  margin: 0;
+}
+
+.accordion-item:first-of-type {
+  border-radius: 60px;
+}
+.accordion-item:first-of-type .accordion-button {
+  border-radius: 0;
+}
+
+.accordion-button:not(.collapsed) {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: transparent;
+  border-radius: 0;
+  border: none;
+}
+
+.accordion-header {
+  border-radius: 0;
+  border: none;
+  background: transparent;
+  width: 100%;
+}
+
+.accordion-button {
+  height: 100%;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 30px 0;
+  position: inherit;
+  text-transform: uppercase;
+}
+.accordion-button:after {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #BFEF6B url("../img/plus-icon.svg") no-repeat center;
+  background-size: 26px;
+  -webkit-transition: none;
+  transition: none;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+}
+.accordion-button:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.accordion-button:hover:after {
+  background-color: #A9E94B;
+}
+.accordion-button:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.accordion-button span {
+  font-weight: 300;
+  margin: 0 20px 0 0;
+}
+.accordion-button:not(.collapsed) {
+  height: auto;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background: #EAF2FF url("../img/close-icon.svg") no-repeat center;
+  background-size: 26px;
+}
+
+.accordion-body {
+  width: 100%;
+  padding: 40px;
+  background: #F4F9FF;
+  border-radius: 60px;
+}
+.accordion-body .box-text {
+  max-width: 817px;
+}
+
+.accordion-item:last-of-type {
+  border-radius: 60px;
+}
+
+.accordion-collapse {
+  width: 100%;
+  max-width: 957px;
+  padding: 30px 0;
+}

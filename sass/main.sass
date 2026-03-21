@@ -70,7 +70,6 @@
         font-family: $default-font
 
 .efficiency
-    
     padding: 0 0 120px
     background: #fff
     position: relative
@@ -123,7 +122,7 @@
         max-width: 367px
 
 .stages
-    border-radius: 0 0 120px 120px        
+    border-radius: 0 0 120px 120px
 
 .stage-card
     width: 100%
@@ -333,7 +332,6 @@
             margin: 0
             border: none
 
-
 .callback-wrapper
     padding: 30px
     display: flex
@@ -358,6 +356,92 @@
     [type='submit']
         margin: 40px 0 0
 
-.consent
+.accordion
+    width: 100%
+    border: none
+    border-radius: 0
+
+.accordion-item
+    width: 100%
+    min-height: 120px
+    border: none
+    border-radius: 60px
+    background: #fff
+    margin: 0 0 20px
+    color: #0B1220
+    padding: 0 30px
+    display: flex
+    align-items: stretch
+    justify-content: space-between
+    position: relative
+    z-index: 1
+    &:last-child
+        margin: 0
+
+.accordion-item:first-of-type
+    border-radius: 60px
+    .accordion-button
+        border-radius: 0
+
+.accordion-button:not(.collapsed)
+    box-shadow: none
+    background: transparent
+    border-radius: 0
+    border: none
+
+.accordion-header
+    border-radius: 0
+    border: none
+    background: transparent
+    width: 100%
 
 
+.accordion-button
+    height: 100%
+    background: transparent
+    border: none
+    border-radius: 0
+    padding: 30px 0
+    position: inherit
+    text-transform: uppercase
+    &:after
+        width: 60px
+        height: 60px
+        border-radius: 50%
+        background: $green url('../img/plus-icon.svg') no-repeat center
+        background-size: 26px
+        transition: none
+        position: absolute
+        right: 30px
+        top: 30px
+    &:hover
+        box-shadow: none
+        &:after
+            background-color: $green_hover
+    &:focus
+        box-shadow: none
+    span
+        font-weight: 300
+        margin: 0 20px 0 0
+    &:not(.collapsed)
+        height: auto
+
+.accordion-button:not(.collapsed)::after
+    background: #EAF2FF url('../img/close-icon.svg') no-repeat center
+    background-size: 26px
+
+.accordion-body
+    width: 100%
+    padding: 40px
+    background: #F4F9FF
+    border-radius: 60px
+    .box-text
+        max-width: 817px
+
+.accordion-item:last-of-type
+    border-radius: 60px
+
+.accordion-collapse
+    width: 100%
+    max-width: 957px
+    padding: 30px 0
