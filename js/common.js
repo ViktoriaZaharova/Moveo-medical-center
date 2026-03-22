@@ -17,7 +17,8 @@ Fancybox.bind("[data-fancybox]", {
 $(document).ready(function () {
 
   // --- БУРГЕР ---
-  $('.btn-burger').on('click', function () {
+  $('.btn-burger').on('click', function (e) {
+    e.preventDefault();
     $(this).toggleClass('is-active');
     $('.nav-menu').toggleClass('is-open');
     $('body').toggleClass('no-scroll'); // чтобы не скроллился фон (по желанию)
@@ -29,12 +30,12 @@ $(document).ready(function () {
     e.preventDefault();
 
     var target = $(this).attr('href');
-    var offset = 80; // отступ сверху (например под фиксированный хедер)
+    var offset = $('header').outerHeight(); // отступ сверху (например под фиксированный хедер)
 
     if ($(target).length) {
       $('html, body').animate({
         scrollTop: $(target).offset().top - offset
-      }, 200);
+      });
     }
 
     // --- ЗАКРЫТИЕ МЕНЮ НА МОБИЛКЕ ---
