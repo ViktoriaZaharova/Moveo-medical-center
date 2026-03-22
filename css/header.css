@@ -1,6 +1,23 @@
+.logo {
+  max-width: 280px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 header {
-  padding: 20px 0 120px;
+  padding: 20px 0;
   background: #F4F9FF;
+}
+header .logo {
+  margin: 0 auto 0 0;
 }
 
 .logo-img2 {
@@ -18,6 +35,9 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.nav-menu .phone {
+  display: none;
 }
 
 .menu {
@@ -65,5 +85,28 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 20px 0 0;
+  margin: 0 20px 0 auto;
+}
+
+.btn-burger {
+  padding: 9px;
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  border-radius: 50%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 0 0 24px;
+}
+.btn-burger span {
+  width: 100%;
+  height: 2px;
+  border-radius: 2px;
+  margin: 0 0 7px;
+  background: #64748B;
+}
+.btn-burger span:last-child {
+  margin: 0;
 }
