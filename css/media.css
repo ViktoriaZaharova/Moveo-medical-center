@@ -448,6 +448,9 @@
   header {
     padding: 10px 0;
   }
+  .header-logo .logo-img2 {
+    max-width: 100px;
+  }
   .home {
     padding: 30px 0 10px;
   }
@@ -651,5 +654,10 @@
   }
   .about-product h2 {
     font-size: 20px;
+  }
+}
+@media only screen and (max-width: 370px) {
+  .header-logo {
+    height: 40px;
   }
 }

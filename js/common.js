@@ -47,3 +47,13 @@ $(document).ready(function () {
   });
 
 });
+
+$(window).on('scroll', function () {
+  var scrollTop = $(this).scrollTop();
+
+  if (scrollTop > 50) { // порог — можно изменить
+    $('.header-logo').addClass('scrolled');
+  } else {
+    $('.header-logo').removeClass('scrolled');
+  }
+});

@@ -3,20 +3,43 @@
 .logo
     max-width: 280px
     width: 100%
-    @include d-flex   
+    @include d-flex
+
+.header-logo
+    position: relative
+    overflow: hidden
+    height: 65px
+    img
+        position: absolute
+        left: 50%
+        width: 100%
+        transform: translateX(-50%)
+        transition: transform 0.4s ease
+
+    .logo-img1
+        transform: translate(-50%, 0)
+        z-index: 2
+
+    .logo-img2
+        transform: translate(-50%, -100%)
+        z-index: 1
+        max-width: 160px
+
+.header-logo.scrolled .logo-img1
+    transform: translate(-50%, -100%)
+
+.header-logo.scrolled .logo-img2
+    transform: translate(-50%, 0)
 
 header
-    padding: 20px 0 
-    background: #F4F9FF 
+    padding: 20px 0
+    background: #F4F9FF
     position: sticky
     top: 0
     left: 0
     z-index: 5
     .logo
-        margin: 0 auto 0 0     
-
-.logo-img2
-    display: none
+        margin: 0 auto 0 0
 
 .nav-menu
     margin: 0 auto
@@ -56,7 +79,6 @@ header
     display: flex
     align-items: center
     margin: 0 20px 0 auto
-
 
 .btn-burger
     padding: 9px
