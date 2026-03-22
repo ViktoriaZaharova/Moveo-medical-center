@@ -94,19 +94,41 @@ header .logo {
   height: 44px;
   min-width: 44px;
   border-radius: 50%;
+  display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 0 0 0 24px;
 }
 .btn-burger span {
-  width: 100%;
-  height: 2px;
-  border-radius: 2px;
-  margin: 0 0 7px;
-  background: #64748B;
+  width: 22px;
+  height: 14px;
+  background: url("../img/toggle-icon.svg") no-repeat center;
+  background-size: 100%;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
-.btn-burger span:last-child {
+.btn-burger.click {
+  background: #EAF2FF;
+}
+.btn-burger.click span {
+  width: 20px;
+  height: 20px;
   margin: 0;
+  border-radius: 0;
+  background: url("../img/close-icon.svg") no-repeat center;
+  background-size: 100%;
+  display: none;
+}
+.btn-burger.click span:first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
