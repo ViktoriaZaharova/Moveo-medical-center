@@ -16,6 +16,10 @@
     .phone
         margin: 0
 
+    .callback-wrapper__content
+        margin: 0
+        max-width: 600px
+
 @media only screen and (max-width: 1440px)
     h1, .h1
         font-size: 40px
@@ -43,6 +47,17 @@
 
     .about-product__content
         padding: 40px
+
+    .callback-wrapper__content
+        max-width: 50%
+        padding: 40px 20px 0 0
+
+    .callback-wrapper__form
+        max-width: 50%
+        padding: 40px
+
+    .contacts-map
+        border-radius: 60px
 
 @media only screen and (max-width: 1370px)
     .header-wrapper
@@ -77,7 +92,7 @@
     .btn-sign
         width: 150px
         height: 150px
-        bottom: -70px   
+        bottom: -70px
 
     .efficiency h2
         padding: 30px
@@ -85,13 +100,15 @@
     .efficiency
         padding: 0 0 60px
         &::before
-            border-radius: 0 0 60px 60px 
+            border-radius: 0 0 60px 60px
 
     .stage-card__body
         padding: 80px
 
     .result-card
         padding: 30px
+        &__icon
+            margin: 0 0 30px
 
 @media only screen and (max-width: 1200px)
     .preparation-content
@@ -100,6 +117,9 @@
 @media only screen and (max-width: 992px)
     .p-120
         padding: 80px 0
+
+    .mb-120
+        marding-bottom: 80px
 
     .btn-price
         margin: 0
@@ -148,9 +168,9 @@
         position: relative
         z-index: 1
         &:nth-child(odd)
-         .stage-card
-            &__img
-                order: -1   
+            .stage-card
+                &__img
+                    order: -1
         &__img
             width: 100%
             height: 400px
@@ -180,7 +200,7 @@
             left: 30px
         &:last-child
             margin: 0
-        
+
     .preparation-content
         width: 100%
         padding: 40px 40px 20px
@@ -199,6 +219,91 @@
 
     .preparation-list-item__body
         padding: 0 0 0 20px
+
+    .gallery
+        margin: 60px 0 80px
+
+    .gallery-slider
+        padding: 0 0 80px
+
+    .gallery-slider-item
+        height: 500px
+        width: 50%
+        padding: 0 5px
+        margin: 0
+        border-radius: 40px
+        &:last-child
+            .gallery-slider-item__text
+                left: auto
+                right: 10px
+
+    .gallery-slider-item__img img
+        border-radius: 40px
+
+    .slick-arrow
+        top: auto
+        bottom: 0
+        transform: none
+
+    .gallery-slider-item__text
+        bottom: 10px
+        left: 10px
+        padding: 10px 20px
+        font-size: 15px
+
+    .nav-tabs
+        width: 100%
+        overflow-x: auto
+        flex-wrap: nowrap
+        white-space: nowrap
+        margin: 0 0 10px
+        background: transparent
+        border-radius: 0
+        .nav-item
+            margin: 0 4px 0 0
+            &:last-child
+                margin: 0
+        .nav-link
+            background: #fff
+
+    .callback-wrapper
+        padding: 10px
+        &__content
+            padding: 20px
+            max-width: none
+        &__form
+            max-width: none
+            padding: 30px
+
+    .accordion-item
+        flex-wrap: wrap
+        padding: 20px 30px
+        min-height: auto
+        margin: 0 0 10px
+        &:last-child
+            margin: 0
+
+    .accordion-button
+        font-size: 15px
+        padding: 0
+        &:after
+            position: relative
+            right: 0
+            top: 0
+            margin: 0 0 0 auto
+
+    .accordion-collapse
+        padding: 0
+
+    .accordion-body
+        margin: 10px 0 0
+
+    .footer-wrapper
+        border-radius: 40px
+        padding: 20px 30px
+
+    footer
+        padding: 0 0 10px
 
 @media only screen and (max-width: 768px)
     .nav-menu
@@ -220,6 +325,24 @@
     .who-for-card__body
         padding: 20px 30px 30px
 
+    .result-card
+        padding: 30px
+        border-radius: 60px
+        flex-direction: row
+        align-items: center
+        &__icon
+            width: 90px
+            height: 90px
+            min-width: 90px
+            margin: 0
+        .box-text
+            margin: 0 0 0 20px
+
+    .contacts-content
+        padding: 40px
+
+    .footer-link
+        width: 60%
 
 @media only screen and (max-width: 576px)
     h1, h1
@@ -240,11 +363,14 @@
     .mt-120
         margin-top: 40px
 
-    .mb-20  
-        margin-bottom: 10px  
+    .mb-120
+        margin-bottom: 40px
+
+    .mb-20
+        margin-bottom: 10px
 
     .box-text
-        font-size: 16px  
+        font-size: 16px
 
     header
         padding: 10px 0
@@ -263,7 +389,7 @@
             display: none
 
     .who-for
-        margin: 40px 0 
+        margin: 40px 0
 
     .btn-sign
         display: none
@@ -278,6 +404,7 @@
         &__number
             font-size: 15px
         &__body
+            align-items: flex-start
             .box-text
                 font-size: 15px
         &__img
@@ -318,8 +445,111 @@
             width: 100%
             border-top: 1px solid #D6E3F5
 
+    .result h2
+        margin: 0 auto 20px
+
+    .gallery
+        margin: 40px 0
+
+    .gallery-slider-item
+        height: 260px
+
+    .nav-tabs
+        .nav-link
+            font-size: 15px
+            padding: 10px 20px
+
+    .tab-content
+        padding: 30px
+
+    .list-prices
+        font-size: 16px
+        li
+            margin: 0 0 10px
+            &:last-child
+                margin: 0
+
+    .form-callback [type=submit]
+        width: 100%
+
+    input, textarea, select
+        font-size: 16px
+
+    label
+        margin: 0 0 10px
+        &:last-child
+            margin: 0
+
+    .accordion-button:after
+        width: 40px
+        height: 40px
+        background-size: 20px
+
+    .accordion-button:not(.collapsed)::after
+        background-size: 20px
+
+    .accordion-body
+        padding: 30px
+
+    .contacts-map
+        height: 200px
+        &::before
+            width: 50px
+            height: 50px
+
+    .contacts-item
+        font-size: 16px
+
+    .footer-link
+        margin: 0 auto 0 0
+
+    .footer-wrapper
+        .logo
+            max-width: 170px
+
+    .link-developer
+        width: 100px
+        height: 44px
+
+    .footer-link
+        font-size: 14px
+        width: 70%
+
+    .preparation-list-item .h4
+        font-size: 16px
+
+
 @media only screen and (max-width: 480px)
 
-@media only screen and (max-width: 420px)
+@media only screen and (max-width: 440px)
+    .footer-link
+        font-size: 12px
+        width: 65%
+
+    .link-developer
+        width: 80px
+        height: 30px
+
+    .footer-wrapper
+        padding: 20px 15px
+
+    .accordion-button
+        font-size: 14px
+        span
+            margin: 0 10px 0 0
+
+    .accordion-item
+        padding: 15px 20px
+
+    .list-prices
+        font-size: 15px
+
+    .result-card__icon
+        width: 80px
+        height: 80px
+        min-width: 80px
+
+    .result-card
+        padding: 30px 20px
 
 @media only screen and (max-width: 370px)
