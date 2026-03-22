@@ -33,3 +33,48 @@ footer
     font-family: $text-font
     &:hover, &:focus
         color: $blue
+
+// modal
+.modal-dialog
+    max-width: 433px
+
+.modal-content
+    border: none
+    border-radius: 60px
+    background: #fff
+    padding: 100px 20px    
+
+.modal-header
+    padding: 0
+    margin: 0
+    border: none
+    .btn-close
+        position: absolute
+        z-index: 1
+        opacity: 1
+        top: 20px
+        right: 20px
+        margin: 0
+        box-sizing: border-box
+        width: 60px
+        height: 60px
+        min-width: 60px
+        border-radius: 50%
+        background: #EAF2FF url('../img/close-icon.svg') no-repeat center
+        background-size: 20px
+          
+
+.modal-title
+    color: $blue
+
+.modal-body
+    padding: 0
+    .box-text
+        max-width: 233px
+        width: 100%
+        margin: 0 auto
+
+.modal-backdrop
+    background: #0B1220
+    &.show
+        opacity: 0.3

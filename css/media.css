@@ -67,6 +67,8 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    position: relative;
+    z-index: 1;
   }
   header .logo {
     padding: 0 24px 0 0;
@@ -75,6 +77,19 @@
   .nav-menu {
     display: none;
     border: none;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    background: #fff;
+    border-radius: 60px;
+    margin: 10px 0 0;
+    top: 100%;
+    width: 100%;
+    padding: 40px;
+  }
+  .nav-menu.is-open {
+    display: block;
   }
   .menu {
     width: 100%;
@@ -591,6 +606,16 @@
   .preparation-list-item .h4 {
     font-size: 16px;
   }
+  .about-product__content h2 {
+    margin: 0 auto 20px;
+  }
+  .modal-dialog {
+    margin: 10px auto;
+    max-width: 393px;
+  }
+  .modal-content {
+    padding: 80px 20px;
+  }
 }
 @media only screen and (max-width: 440px) {
   .footer-link {
@@ -623,5 +648,8 @@
   }
   .result-card {
     padding: 30px 20px;
+  }
+  .about-product h2 {
+    font-size: 20px;
   }
 }

@@ -13,3 +13,36 @@ Fancybox.bind("[data-fancybox]", {
   // Your custom options
 });
 
+
+$(document).ready(function () {
+
+  // --- БУРГЕР ---
+  $('.btn-burger').on('click', function () {
+    $(this).toggleClass('is-active');
+    $('.nav-menu').toggleClass('is-open');
+    $('body').toggleClass('no-scroll'); // чтобы не скроллился фон (по желанию)
+  });
+
+
+  // --- ПЛАВНЫЙ СКРОЛЛ ---
+  $('.go_to').on('click', function (e) {
+    e.preventDefault();
+
+    var target = $(this).attr('href');
+    var offset = 80; // отступ сверху (например под фиксированный хедер)
+
+    if ($(target).length) {
+      $('html, body').animate({
+        scrollTop: $(target).offset().top - offset
+      }, 200);
+    }
+
+    // --- ЗАКРЫТИЕ МЕНЮ НА МОБИЛКЕ ---
+    if ($(window).width() <= 1370) {
+      $('.nav-menu').removeClass('is-open');
+      $('.btn-burger').removeClass('is-active');
+      $('body').removeClass('no-scroll');
+    }
+  });
+
+});

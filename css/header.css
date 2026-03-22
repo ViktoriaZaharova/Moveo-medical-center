@@ -115,10 +115,10 @@ header .logo {
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
-.btn-burger.click {
+.btn-burger.is-active {
   background: #EAF2FF;
 }
-.btn-burger.click span {
+.btn-burger.is-active span {
   width: 20px;
   height: 20px;
   margin: 0;
@@ -127,7 +127,7 @@ header .logo {
   background-size: 100%;
   display: none;
 }
-.btn-burger.click span:first-child {
+.btn-burger.is-active span:first-child {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
