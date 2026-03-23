@@ -30,22 +30,37 @@ $(document).ready(function () {
     e.preventDefault();
 
     var target = $(this).attr('href');
-    var offset = $('header').outerHeight(); // отступ сверху (например под фиксированный хедер)
+    if (!$(target).length) return;
 
-    if ($(target).length) {
-      $('html, body').animate({
-        scrollTop: $(target).offset().top - offset
-      });
-    }
-
-    // --- ЗАКРЫТИЕ МЕНЮ НА МОБИЛКЕ ---
+    // закрываем меню СНАЧАЛА
     if ($(window).width() <= 1370) {
       $('.nav-menu').removeClass('is-open');
       $('.btn-burger').removeClass('is-active');
       $('body').removeClass('no-scroll');
     }
-  });
 
+    // даём время хедеру/меню обновиться
+    setTimeout(function () {
+
+      var $header = $('header');
+
+      // высота хедера
+      var headerHeight = $header.outerHeight();
+
+      // если sticky уже "прилип" — учитываем это
+      var headerTop = $header.offset().top;
+      var isStickyActive = headerTop <= $(window).scrollTop();
+
+      var offset = isStickyActive ? headerHeight : 0;
+
+      var scrollTo = $(target).offset().top - offset - 10; // 10px запас
+
+      $('html, body').animate({
+        scrollTop: scrollTo
+      });
+
+    });
+  });
 });
 
 $(window).on('scroll', function () {

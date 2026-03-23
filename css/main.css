@@ -8,6 +8,12 @@
 
 .home-banner {
   position: relative;
+  height: 634px;
+}
+.home-banner img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .btn-sign {
@@ -20,7 +26,7 @@
 }
 
 .about-product__img {
-  height: 100%;
+  height: 875px;
 }
 .about-product__img img {
   width: 100%;
@@ -55,7 +61,7 @@
   font-size: 24px;
   font-weight: 500;
   line-height: 100%;
-  letter-spacing: -0.2px;
+  letter-spacing: 0.5px;
   color: #0066FF;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -398,7 +404,7 @@
   position: relative;
   z-index: 1;
   width: 572px;
-  height: 700px;
+  height: 600px;
   margin: 0 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -451,7 +457,7 @@
   font-size: 18px;
   font-weight: 300;
   line-height: 122%;
-  letter-spacing: -0.2px;
+  letter-spacing: 0.2px;
   width: 100%;
   text-align: left;
   color: #0B1220;
@@ -590,7 +596,7 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 100%;
-  letter-spacing: -0.2px;
+  letter-spacing: 0.2px;
 }
 .accordion-button:after {
   width: 60px;

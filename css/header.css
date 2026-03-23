@@ -20,6 +20,7 @@
 .header-logo img {
   position: absolute;
   left: 50%;
+  max-width: 100%;
   width: 100%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
