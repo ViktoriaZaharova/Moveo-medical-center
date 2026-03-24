@@ -27,40 +27,34 @@ $(document).ready(function () {
 
   // --- ПЛАВНЫЙ СКРОЛЛ ---
   $('.go_to').on('click', function (e) {
-    e.preventDefault();
+  e.preventDefault();
 
-    var target = $(this).attr('href');
-    if (!$(target).length) return;
+  var target = document.querySelector($(this).attr('href'));
+  if (!target) return;
 
-    // закрываем меню СНАЧАЛА
-    if ($(window).width() <= 1370) {
-      $('.nav-menu').removeClass('is-open');
-      $('.btn-burger').removeClass('is-active');
-      $('body').removeClass('no-scroll');
-    }
+  // закрываем меню
+  if ($(window).width() <= 1370) {
+    $('.nav-menu').removeClass('is-open');
+    $('.btn-burger').removeClass('is-active');
+    $('body').removeClass('no-scroll');
+  }
 
-    // даём время хедеру/меню обновиться
-    setTimeout(function () {
+  setTimeout(function () {
 
-      var $header = $('header');
+    var headerHeight = document.querySelector('header').offsetHeight;
 
-      // высота хедера
-      var headerHeight = $header.outerHeight();
+    var rect = target.getBoundingClientRect();
+    var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-      // если sticky уже "прилип" — учитываем это
-      var headerTop = $header.offset().top;
-      var isStickyActive = headerTop <= $(window).scrollTop();
+    var scrollTo = rect.top + scrollTop - headerHeight - 10;
 
-      var offset = isStickyActive ? headerHeight : 0;
-
-      var scrollTo = $(target).offset().top - offset - 10; // 10px запас
-
-      $('html, body').animate({
-        scrollTop: scrollTo
-      });
-
+    window.scrollTo({
+      top: scrollTo,
+      behavior: 'smooth'
     });
-  });
+
+  }, 200);
+});
 });
 
 $(window).on('scroll', function () {
